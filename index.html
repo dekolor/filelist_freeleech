@@ -14,7 +14,8 @@
     <div id="app" class="container">
       <div v-if="!has_passkey" class="card" style="position:absolute;top:50%;left:50%;transform: translate(-50%, -50%);">
         <div class="card-body">
-          Nu ai setat passkey-ul si username-ul, le poti introduce mai jos pentru a continua.<br><br>
+          Nu ai setat passkey-ul si username-ul, le poti introduce mai jos pentru a continua.<br>
+          Passkey-ul il poti obtine de <a href="https://filelist.io/my.php" target="_blank">aici</a>. Nu este stocat pe server, nu am acces la el.<br><br>
           <input type="text" class="form-control" placeholder="passkey" v-model="passkey"><br>
           <input type="text" class="form-control" placeholder="username" v-model="username"><br>
           <button v-on:click="closeDialog" class="btn btn-success">Continua</button>
